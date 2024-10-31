@@ -1,0 +1,164 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.phone {
+    width: 300px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #333;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.screen {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy6xxz_LlZR7x9_erza4rdNG5kIKt9kBLU_A&s");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 10px;
+    color: #fff;
+}
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.status-bar .time {
+    font-weight: bold;
+}
+
+.right-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.signal, .wifi, .battery {
+    width: 18px;
+    height: 10px;
+    background-color: #666;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+/* App Pages */
+.app-pages {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 200%;
+}
+
+.app-page {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.app:hover {
+    transform: scale(1.1);
+}
+
+/* Notification */
+.notification {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: none;
+    font-size: 14px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Dots */
+.navigation-dots {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Home Button */
+.home-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #666;
+    border-radius: 50%;
+}
+/* Different App Colors */
+.app1 { background-color: #ff5722; }
+.app2 { background-color: #03a9f4; }
+.app3 { background-color: #4caf50; }
+.app4 { background-color: #ffeb3b; color: #333; }
+.app5 { background-color: #673ab7; }
+.app6 { background-color: #ff9800; }
+.app7 { background-color: #9c27b0; }
+.app8 { background-color: #009688; }
+
+.app:hover {
+    transform: scale(1.1);
+}
