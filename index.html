@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Phone Mockup</title>
+    <link rel="stylesheet" href="phone aap .css">
+    
+</head>
+<body>
+    <div class="phone">
+        <div class="screen">
+            <!-- Status Bar -->
+            <div class="status-bar">
+                <span class="time">12:45</span>
+                <div class="right-icons">
+                    <div class="signal"></div>
+                    <div class="wifi"></div>
+                    <div class="battery"></div>
+                </div>
+            </div>
+
+            <!-- App Pages -->
+            <div class="app-pages">
+                <div class="app-page" id="page1">
+                    <div class="app app1" onclick="openApp('Music')">Music</div>
+                    <div class="app app2" onclick="openApp('Camera')">Camera</div>
+                    <div class="app app3" onclick="openApp('Gallery')">Gallery</div>
+                    <div class="app app4" onclick="openApp('Messages')">Messages</div>
+                    <div class="app app5" onclick="openApp('Weather')">Weather</div>
+                    <div class="app app6" onclick="openApp('Calendar')">Calendar</div>
+                    <div class="app app7" onclick="openApp('Maps')">Maps</div>
+                    <div class="app app8" onclick="openApp('Settings')">Settings</div>
+                </div>
+                <div class="app-page" id="page2">
+                    <div class="app app1" onclick="openApp('Calculator')">Calculator</div>
+                    <div class="app app2" onclick="openApp('Notes')">Notes</div>
+                    <div class="app" onclick="openApp('Clock')">Clock</div>
+                    <div class="app" onclick="openApp('Contacts')">Contacts</div>
+                    <div class="app" onclick="openApp('Mail')">Mail</div>
+                    <div class="app" onclick="openApp('Music')">Music</div>
+                    <div class="app app5" onclick="openApp('Browser')">Browser</div>
+                    <div class="app app4" onclick="openApp('Settings')">Settings</div>
+                </div>
+            </div>
+
+            <!-- Bottom Navigation Dots -->
+            <div class="navigation-dots">
+                <span class="dot active" onclick="goToPage(0)"></span>
+                <span class="dot" onclick="goToPage(1)"></span>
+            </div>
+
+            <!-- Home Button -->
+            <div class="home-button" onclick="goToHome()"></div>
+
+            <!-- Pop-Up Notification -->
+            <div class="notification" id="notification">New message received!</div>
+        </div>
+    </div>
+
+    <script src="phone.js"></script>
+</body>
+</html>
